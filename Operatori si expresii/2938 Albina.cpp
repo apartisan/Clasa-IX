@@ -6,9 +6,10 @@ int main(){
     int celule=1;
     int zile;
     cin>> zile;
-    for (int i=2; i<=zile;i++){
-        celule = celule+(i-1)*6;
-        //cout<<i<<" "<<celule<<'\t';
-    }
+//    for (int i=2; i<=zile;i++){
+//        celule = celule+(i-1)*6;
+//        //cout<<i<<" "<<celule<<'\t';
+//    }
+    celule = 3*zile*(zile-1)+1;
     cout<<celule;
 }
