@@ -1,7 +1,3 @@
-/*
-
-*/
-
 #include <iostream>
 using namespace std;
 
@@ -17,10 +13,14 @@ int main(){
     //merge sort
     i=j=k=0;
     while (i<n && j<m){
-        if (a[i]<b[j])
-            c[k++] = a[i++];
-        else
-            c[k++] = b[j++];
+        if (a[i]<b[j]){
+            c[k] = a[i];
+            i++;
+            k++;}
+        else{
+            c[k] = b[j];
+            j++;
+            k++;}
     }
     while (i<n)
         c[k++] = a[i++];
